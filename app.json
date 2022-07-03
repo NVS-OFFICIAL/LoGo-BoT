@@ -1,0 +1,35 @@
+{
+    "name": "Logo Bot",
+    "description": "A Telegram Bot To Create Cool Logos,Made By ~(c)XnKiT",
+    "keywords": [
+        "telegram",
+        "logo maker",
+        "logo",
+        "bot"
+    ],
+    "repository": "https://github.com/XnKiT/LoGo-Bot",
+    "website": "https://xnkit.github.io/k",
+    "success_url": "https://github.com/XnKiT",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather"
+        }
+    },
+    "buildpacks": [
+        { 
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
